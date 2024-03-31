@@ -4,11 +4,28 @@
     background-color: #252526;
     position: fixed;
     margin-left: 63px;
+    color: white;
+    font-family: 'Segoe UI';
 }
 
+.heading-lg {
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.heading-sm {
+    font-weight: 600;
+    font-size: 17px;
+
+}
 .explorer ul {
     list-style-type: none;
-    color: white;
     display: flex;
     flex-direction: column;
 }
+
+.explorer ul li a {
+    color: white;
+    text-decoration: none; 
+  }
