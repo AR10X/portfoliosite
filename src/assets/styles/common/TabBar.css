@@ -1,0 +1,15 @@
+.tabbar {
+    background-color: #252526;
+    /* background-color: blue; */
+    height: 40px;
+    width: 80vw;
+    color: white;
+    position: fixed;
+    margin-left: 289px;
+}
+
+.tabbar ul {
+    display: flex;
+    list-style-type: none;
+    
+}

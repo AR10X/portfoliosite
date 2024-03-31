@@ -1,0 +1,7 @@
+.status {
+    width: 100vw;
+    position: fixed;
+    background-color: #007ACC;
+    height: 20px;
+    bottom: 0;
+}

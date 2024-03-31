@@ -1,0 +1,14 @@
+.explorer {
+    width: 226px;
+    height: 90vh;
+    background-color: #252526;
+    position: fixed;
+    margin-left: 63px;
+}
+
+.explorer ul {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}

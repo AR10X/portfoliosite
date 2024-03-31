@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    
+    padding-top: 40px;
+  }
+
+.outlet {
+    position: fixed;
+    /* background-color: yellow; */
+    margin-left: 289px;
+    margin-top: 40px;
+  }
