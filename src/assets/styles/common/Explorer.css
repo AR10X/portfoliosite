@@ -52,3 +52,7 @@
 .span-space {
     margin-left: 7px;
 }
+
+.selActive {
+    background-color: #37373D;
+}

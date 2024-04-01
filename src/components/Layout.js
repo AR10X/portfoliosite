@@ -1,4 +1,5 @@
 import React from 'react';
+import { AppProvider } from '../contexts/AppContext';
 import '../assets/styles/Layout.css';
 import { Outlet } from 'react-router-dom';
 import MenuBar from './common/MenuBar';
@@ -14,14 +15,16 @@ const Layout = () => {
       <div className='container'>
         <MenuBar />
         <div className='content'>
-          <ActivityBar />
-          <Explorer />
-          <div >
-            <TabBar />
-            <div className='outlet'>
-              <Outlet />
-            </div>
-          </div>
+          <AppProvider>
+            <ActivityBar />
+            <Explorer />
+              <div >
+                <TabBar />
+                <div className='outlet'>
+                  <Outlet />
+                </div>
+              </div>
+          </AppProvider>
         </div>
         <StatusBar />
       </div>

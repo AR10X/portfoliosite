@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState, useContext } from 'react';
+import { AppContext } from '../../contexts/AppContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/common/Explorer.css';
@@ -10,12 +11,13 @@ import jsonIcon from '../../assets/images/tech-icons/json-new.jpg';
 
 
 const Explorer = () => {
+  const { selectedItem, handleItemClick } = useContext(AppContext);
+
   const [isOpen, setIsOpen] = useState(true);
   
   const toggleOptions = () => {
     setIsOpen(!isOpen);
   };
-
   return (
       <div className='explorer'>
         <p  className='heading-1' >EXPLORER</p>
@@ -26,20 +28,20 @@ const Explorer = () => {
         )}<span className='span-space'></span>PORTFOLIO-APP
         </p>
         {isOpen && (
-        <ul>
-          <li>
-            <Link to='/'><img src={jsIcon} alt='jsIcon' /><span className='span-space'></span>Home.js</Link>
-          </li>
-          <li>
-            <Link to='/about'><img src={pugIcon} alt='pugIcon' /><span className='span-space'></span>About.pug</Link>
-          </li>
-          <li>
-            <Link to='/Projects'><img src={cssIcon} alt='cssIcon' /><span className='span-space'></span>Projects.css</Link>
-          </li>
-          <li>
-            <Link to='/Contact'><img src={jsonIcon} alt='jsonIcon' /><span className='span-space'></span>Contact.json</Link>
-          </li>
-        </ul>
+          <ul>
+            <li className={selectedItem === 'Explorer' ? 'selActive' : ''} onClick={() => handleItemClick('Explorer')}>
+              <Link to='/'><img src={jsIcon} alt='jsIcon' /><span className='span-space'></span>Home.js</Link>
+            </li>
+            <li className={selectedItem === 'About' ? 'selActive' : ''} onClick={() => handleItemClick('About')}>
+              <Link to='/about'><img src={pugIcon} alt='pugIcon' /><span className='span-space'></span>About.pug</Link>
+            </li>
+            <li className={selectedItem === 'Projects' ? 'selActive' : ''} onClick={() => handleItemClick('Projects')}>
+              <Link to='/projects'><img src={cssIcon} alt='cssIcon' /><span className='span-space'></span>Projects.css</Link>
+            </li>
+            <li className={selectedItem === 'Contact' ? 'selActive' : ''} onClick={() => handleItemClick('Contact')}>
+              <Link to='/contact'><img src={jsonIcon} alt='jsonIcon' /><span className='span-space'></span>Contact.json</Link>
+            </li>
+          </ul>
         )}
       </div>
     );

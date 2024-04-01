@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import '../../assets/styles/common/ActivityBar.css';
 import {Link} from 'react-router-dom';
+import { AppContext } from '../../contexts/AppContext';
 import {
   ExplorerWhite,
   ExplorerGrey,
@@ -18,29 +19,23 @@ import {
 
 
 
-
-
 const ActivityBar = () => {
-  const [selectImg, setSelectImg] = useState('Explorer');   
-
-  const handleImgClick = (imgState) => {
-    setSelectImg(imgState);
-  }
+  const { selectedItem, handleItemClick } = useContext(AppContext);
 
   return (
       <div className='activitybar'>
         <div className='top'>
-          <Link to='/'>
-            <img src={selectImg === 'Explorer' ? ExplorerWhite : ExplorerGrey} alt='explorer' onClick={() => handleImgClick('Explorer')} />
+          <Link to='/' onClick={() => handleItemClick('Explorer')}>
+            <img src={selectedItem === 'Explorer' ? ExplorerWhite : ExplorerGrey} alt='explorer' />
           </Link>
-          <Link to='/about'>
-            <img src={selectImg === 'About' ? AboutWhite : AboutGrey} alt='about' onClick={() => handleImgClick('About')} />
+          <Link to='/about' onClick={() => handleItemClick('About')}>
+            <img src={selectedItem === 'About' ? AboutWhite : AboutGrey} alt='about' />
           </Link>
-          <Link to='/projects'>
-            <img src={selectImg === 'Projects' ? ProjectsWhite : ProjectsGrey} alt='projects' onClick={() => handleImgClick('Projects')} />
+          <Link to='/projects' onClick={() => handleItemClick('Projects')}>
+            <img src={selectedItem === 'Projects' ? ProjectsWhite : ProjectsGrey} alt='projects' />
           </Link>
-          <Link to='/contact'>
-            <img src={selectImg === 'Contact' ? ContactWhite : ContactGrey} alt='contact' onClick={() => handleImgClick('Contact')} />
+          <Link to='/contact' onClick={() => handleItemClick('Contact')}>
+            <img src={selectedItem === 'Contact' ? ContactWhite : ContactGrey} alt='contact' />
           </Link>
         </div>
         <div className='bottom'>
