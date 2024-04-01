@@ -6,10 +6,31 @@
     color: white;
     position: fixed;
     margin-left: 289px;
+    font-family: 'Segoe UI';
 }
 
 .tabbar ul {
     display: flex;
     list-style-type: none;
+    
+}
+
+.tabbar ul li a {
+    color: white;
+    text-decoration: none; 
+    
+    display: flex;
+    
+    
+  }
+
+.tabbar ul li {
+    
+    /* height: 40px; */
+    padding: 9px 20px 9px 20px;
+}
+
+.tabbar ul li:hover {
+    background-color: #1E1E1E;
     
 }
