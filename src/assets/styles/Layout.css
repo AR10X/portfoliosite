@@ -5,8 +5,9 @@
   }
 
 .outlet {
-    position: fixed;
+    /* position: fixed */
     /* background-color: yellow; */
     margin-left: 289px;
     margin-top: 40px;
+    
   }
