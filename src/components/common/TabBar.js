@@ -3,7 +3,7 @@ import { AppContext } from '../../contexts/AppContext';
 import '../../assets/styles/common/TabBar.css';
 import {Link} from 'react-router-dom';
 import jsIcon from '../../assets/images/tech-icons/js-icon-new.jpg';
-import pugIcon from '../../assets/images/tech-icons/pug-new.jpg';
+import ejsIcon from '../../assets/images/tech-icons/ejs-new.jpg';
 import cssIcon from '../../assets/images/tech-icons/css-new.jpg';
 import jsonIcon from '../../assets/images/tech-icons/json-new.jpg';
 
@@ -17,7 +17,7 @@ const TabBar = () => {
             <Link to='/'><img src={jsIcon} alt='jsIcon' /><span className='span-space'></span>Home.js</Link>
           </li>
           <li className={selectedItem === 'About' ? 'selected' : ''} onClick={() => handleItemClick('About')}>
-            <Link to='/about'><img src={pugIcon} alt='pugIcon' /><span className='span-space'></span>About.pug</Link>
+            <Link to='/about'><img src={ejsIcon} alt='ejsIcon' /><span className='span-space'></span>About.ejs</Link>
           </li>
           <li className={selectedItem === 'Projects' ? 'selected' : ''} onClick={() => handleItemClick('Projects')}>
             <Link to='/projects'><img src={cssIcon} alt='cssIcon' /><span className='span-space'></span>Projects.css</Link>

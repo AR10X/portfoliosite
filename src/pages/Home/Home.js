@@ -1,24 +1,9 @@
 import React from 'react';
-import NumImg from '../../assets/images/home/numbers.jpg';
+import NumImg from '../../assets/images/home/home-line.jpg';
 import './Home.css';
 import Illust from '../../assets/images/home/Group.svg';
-import styled from 'styled-components';
+import { BlueText, GreenText, YellowText, WhiteText } from '../../components/utilities/TextStyles';
 
-
-const BlueText = styled.span`
-  color: #007ACC;
-`;
-
-const GreenText = styled.span`
-  color: #6A8A35;
-`;
-
-const YellowText = styled.span`
-  color: #FFD710;
-`;
-const WhiteText = styled.span`
-  color: #ffffff;
-`;
 
 const Home = () => {
   return (
