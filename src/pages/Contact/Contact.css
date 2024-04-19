@@ -1,0 +1,30 @@
+.contact-container {
+  font-size: 20px;
+}
+
+.json-data {
+  color: #ffffff; /* White */
+  padding-top: 0px;
+  top: 0;
+}
+
+.property {
+  color: #68CDFE; /* Value color */
+}
+
+.key {
+  color: #AC9178; /* Name color */
+}
+
+.json-item {
+  margin-left:20px;
+}
+
+.contact-main {
+  display: flex;
+}
+
+.contact-container .json-data .json-item a {
+  color: #68CDFE; /* Color of the hyperlink */
+  text-decoration: none; /* Remove underline */
+}
