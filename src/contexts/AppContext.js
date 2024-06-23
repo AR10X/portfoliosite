@@ -1,17 +1,20 @@
-// AppContext.js
 import React, { createContext, useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export const AppContext = createContext();
 
+const capitalize = (string) => {
+  if (typeof string !== 'string') return '';
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 export const AppProvider = ({ children }) => {
-  const [selectedItem, setSelectedItem] = useState('Explorer'); // Initialize selectedItem to 'Explorer'
+  const [selectedItem, setSelectedItem] = useState('Explorer'); 
   const location = useLocation();
 
   useEffect(() => {
-    // Parse the pathname from the location to set the selected item
     const path = location.pathname;
-    const selectedItemFromPath = path === '/' ? 'Explorer' : path.slice(1).capitalize(); // Assuming the path is like "/about", "/projects", etc.
+    const selectedItemFromPath = path === '/' ? 'Explorer' : capitalize(path.slice(1));
     setSelectedItem(selectedItemFromPath);
   }, [location.pathname]);
 
@@ -24,8 +27,4 @@ export const AppProvider = ({ children }) => {
       {children}
     </AppContext.Provider>
   );
-};
-
-String.prototype.capitalize = function() {
-  return this.charAt(0).toUpperCase() + this.slice(1);
 };

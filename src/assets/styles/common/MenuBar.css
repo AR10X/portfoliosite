@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-ul {
+.menu-left ul {
   
   display: flex;
   list-style-type: none;

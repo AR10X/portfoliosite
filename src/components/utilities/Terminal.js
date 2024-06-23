@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './Terminal.css'; // Import your CSS file for styling
+import emailjs from 'emailjs-com';
+import './Terminal.css';
 
 const Terminal = () => {
-  const [outputs, setOutputs] = useState([['Enter "contact" command to contact me']]);
+  const [outputs, setOutputs] = useState([['Ready to get in touch? Just type "contact" to start the conversation!']]);
   const [input, setInput] = useState('');
   const [formData, setFormData] = useState({});
   const [step, setStep] = useState(0);
@@ -22,9 +23,9 @@ const Terminal = () => {
     const command = input.trim().toLowerCase();
 
     switch (step) {
-      case 0: // Waiting for contact command
+      case 0: 
         if (command === 'contact') {
-          setOutputs([...outputs, ['Enter first name:']]);
+          setOutputs([...outputs, ["Let's get started! Please enter your first name:"]]);
           setStep(1);
         } else if (command === 'help') {
           setOutputs([
@@ -36,33 +37,36 @@ const Terminal = () => {
             ],
           ]);
         } else {
-          setOutputs([...outputs, ['Command not recognized. Type "help" for available commands.']]);
+          setOutputs([...outputs, ["Hmm, I didn't catch that. Type 'help' to see the available commands."]]);
         }
         break;
-      case 1: // Waiting for first name
+      case 1: 
         setFormData({ ...formData, firstName: command });
-        setOutputs([...outputs, ['Enter last name:']]);
+        setOutputs([...outputs, ["Great! Now, please enter your last name:"]]);
         setStep(2);
         break;
-      case 2: // Waiting for last name
+      case 2: 
         setFormData({ ...formData, lastName: command });
-        setOutputs([...outputs, ['Enter email id:']]);
+        setOutputs([...outputs, ["Excellent! Please provide your email address to continue."]]);
         setStep(3);
         break;
-      case 3: // Waiting for email id
+      case 3: 
         setFormData({ ...formData, email: command });
-        setOutputs([...outputs, ['Anything else you want to tell me?']]);
+        setOutputs([...outputs, ["Is there anything else on your mind that you'd like to share?"]]);
         setStep(4);
         break;
-      case 4: // Confirmation step
-        setOutputs([...outputs, ['Pls confirm this by typing "done"']]);
+      case 4: 
+        setFormData({ ...formData, message: command });
+        setOutputs([...outputs, ["Kindly confirm your submission by typing 'done'."]]);
         setStep(5);
         break;
-      case 5: // Done confirmation step
+      case 5:
         if (command.toLowerCase() === 'done') {
+          sendEmail(formData);
           setOutputs([
             ...outputs,
             [
+              'Your submission has been sent successfully.',
               'Thank you for contacting me, will get back to you.',
               'Type "contact" again to fill another form',
             ],
@@ -75,6 +79,16 @@ const Terminal = () => {
       default:
         break;
     }
+  };
+
+  const sendEmail = (formData) => {
+    emailjs.send('service_1qai191', 'template_16ihi8j', formData, 'DA3FE-Os-OIDmELbG')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+      });
   };
 
   return (

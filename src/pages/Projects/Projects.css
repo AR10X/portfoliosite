@@ -1,0 +1,44 @@
+.projects-container {
+  
+  display: flex;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  font-family: Consolas, Courier, monospace;
+  margin: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: white;
+  /* border-radius: 20px; */
+  width: 270px;
+}
+
+.project-card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.technologies span {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}

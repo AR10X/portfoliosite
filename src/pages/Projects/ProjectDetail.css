@@ -1,0 +1,115 @@
+.detail-container {
+    
+    font-family: Consolas, Courier, monospace;
+  }
+  
+.detail-card {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 130px;
+  padding-top: 40px;
+}
+
+.project-description {
+  margin-top: 10px;
+  color: #C1CCCC;
+
+}
+
+.detail-image {
+  width: 130px;
+  
+}
+
+.detail-info {
+    padding-left: 20px;
+  }
+  
+  .detail-info a {
+    text-decoration: none;
+  }
+  .detail-info h3 {
+    margin: 0 0 10px;
+    
+    color: #C1CCCC;
+    font-size: 1.6rem;
+  }
+  
+  .detail-info h3 .version {
+    font-size: 0.9rem;
+    color: #bbb; /* Light grey for better contrast on dark background */
+    margin-left: 8px;
+    background-color: #333; /* Dark background */
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
+  
+  
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .tag {
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.875rem;
+  }
+  
+  .visit-site-button {
+    padding: 6px;
+    background-color: #0E639C;
+    color: white;
+    font-weight: 800;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-family: Consolas, Courier, monospace;
+    margin-left: 5px;
+  }
+  
+  .visit-site-button:hover {
+    background-color: #0056b3;
+  }
+
+  .details-option-menu {
+    display: flex;
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding-top: 5px;
+    
+    border-bottom: 1px solid #414141;
+  }
+  
+  .details-option {
+    text-transform: uppercase;
+    font-weight: light;
+    cursor: pointer;
+    color: #C1CCCC;
+    font-size: 13px;
+    padding: 5px 20px 10px 20px;
+    font-family: 'Segoe UI';
+    /* transition: color 0.3s ease; */
+  }
+  
+  .details-option:hover {
+    color: #fff; /* Change color on hover */
+  }
+  
+  
+  .details-op-term {
+    text-transform: uppercase;
+    font-weight: light;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Segoe UI';
+    border-bottom: 1px solid white;
+  }
