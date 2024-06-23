@@ -1,5 +1,5 @@
 import React from 'react';
-import NumImg from '../../assets/images/home/home-line.jpg';
+import NumImg from '../../assets/images/home/home-line2.jpg';
 import './Home.css';
 import Illust from '../../assets/images/home/Group.svg';
 import { BlueText, GreenText, YellowText, WhiteText } from '../../components/utilities/TextStyles';

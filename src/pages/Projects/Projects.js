@@ -9,7 +9,6 @@ import appleImage from '../../assets/images/projects/project-thumbnails/apple.jp
 import ambrosiaImage from '../../assets/images/projects/project-thumbnails/ambrosia.jpg';
 import cardchessImage from '../../assets/images/projects/project-thumbnails/card-chess.jpg';
 import { Link } from 'react-router-dom';
-import NumImg3 from '../../assets/images/projects/project-line.jpg';
 
 const Projects = () => {
   // Sample data for projects
@@ -74,9 +73,6 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <div className="header-image">
-        <img src={NumImg3} alt='numbers' />
-      </div>
       <div className="projects-grid">
         {projects.map(project => (
           <div className="project-card" key={project.id}>
