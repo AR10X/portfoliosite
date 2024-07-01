@@ -8,7 +8,7 @@ import { BlueText, GreenText, YellowText, WhiteText } from '../../components/uti
 const Home = () => {
   return (
       <div className='home-main'>
-        <div>
+        <div className='home-numbers'>
           <img src={NumImg} alt='numbers'></img>
         </div>
         <div className='home-left'>

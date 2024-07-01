@@ -30,12 +30,11 @@ const Contact = () => {
   return (
     <div>
       <div className='contact-main'>
-        <div>
+        <div className='contact-numbers'>
           <img src={NumImg} alt='numbers' />
         </div>
         <div className="contact-container">
           <div className="json-data">
-            
               <code>
                 {"{"}
                 {Object.entries(socialData).map(([key, { username, link }], index) => (

@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1024px) {
+    .menubar{
+        height: 10vh;
+        font-size: 1.8vw;
+    }
+    .activitybar{
+        width: 5vw;
+        height: 83vh;
+    }
+    .activitybar img {
+        width: 4.5vw;
+    }
+    .explorer{
+        width: 20vw;
+        height: 83vh;
+        margin-left:5vw;
+    }
+    .explorer ul {
+        font-size: 1.7vw;
+    }
+    .heading-1 {
+        font-size: 1.5vw;
+    }
+    .heading-2 {
+        font-size: 1.5vw;
+    }
+    .outlet {
+        margin-left: 25vw;
+    }
+    .tabbar {
+        margin-left: 25vw;
+        width: 75vw;
+        height: 9vh;
+        font-size: 1.5vw;
+        
+    }
+    .tabbar ul li  {
+        padding: 1vh 2vw;
+        height: 7vh ;
+    }
+    .tabbar img {
+        width: 2vw;
+
+    }
+    .status{
+        height: 7vh;
+    }
+    .home-txt-1 {
+        font-size: 1.5vw;
+    }
+    .home-txt-2 {
+        font-size: 1.5vw;
+    }
+    .home-txt-4 {
+        font-size: 1.5vw;
+    }
+    
+    .home-txt-3 {
+        margin-top: 5vh;
+        font-size: 1.5vw;
+    }
+    .hm-green {
+        font-size: 1.5vw;
+    }
+    .home-right img {
+        width: 20vw;
+    }
+    .home-right {
+        padding-top: 10vh;
+        padding-left: 10vw;
+    }
+    .home-block h1 {
+        font-size: 3vw;
+    }
+    .home-numbers img {
+        height: 100vh;
+        
+    }
+    .about-numbers img {
+        height: 70%;
+        
+    }
+    .content {
+        padding-top: 10vh;
+        
+    }
+    .about-main {
+        font-size: 1.5vw;
+    }
+    .about-top-right{
+        padding: 2vh 2vw;
+    }
+    .about-top-right img {
+        width: 20vw;
+    }
+    .menu-right img {
+        height: 8vh;
+    }
+    .project-card {
+        width: 30vw;
+    }
+    .projects-container {
+        font-size: 1.7vw;
+    }
+    .project-details h3 {
+        padding-top: 0px;
+    }
+    .detail-card {
+        margin-left: 3vw;
+        padding-top: 2vh;
+    }
+    .detail-image {
+        width: 10vw;
+    }
+    .detail-info h3 {
+        font-size: 2.5vw;
+    }
+    .terminal-container {
+        height: 27vh;
+    }
+    .contact-numbers img {
+        height: 100vh;
+    }
+    .contact-container {
+        font-size: 1.5vw;
+    }
+    .option {
+        font-size: 1vw;
+        padding: 1vh 2vw;
+    }
+    .op-term {
+        font-size: 1vw;
+        padding: 1vh 2vw;
+    }
+    .prompt {
+        font-size: 1.5vw;
+    }
+    .terminal p {
+        font-size: 1.5vw;
+    }
+    .input {
+        font-size: 1.5vw;
+    }
+}
+
+  
+
+
+  

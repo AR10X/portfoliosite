@@ -8,8 +8,3 @@
     height: 90vh;
     position: fixed;
 }
-
-.bottom {
-    display: flex;
-    flex-direction: column;
-}

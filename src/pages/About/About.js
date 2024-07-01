@@ -14,7 +14,7 @@ import NodeLogo from '../../assets/images/about/nodejs.svg';
 const About = () => {
     return (
       <div className='about-main'>
-        <div>
+        <div className='about-numbers'>
           <img src={NumImg2} alt='numbers'></img>
         </div>
         <div className='about-content'>
@@ -64,7 +64,7 @@ const About = () => {
                 <WhiteText>></WhiteText>
               </div>
             </div>
-            <div className='top-right'>
+            <div className='about-top-right'>
               <div>
                 <img src={ProfilePic} alt='Profile pic'></img>
               </div>
