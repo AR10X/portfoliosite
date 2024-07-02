@@ -75,7 +75,8 @@ const Projects = () => {
     <div className="projects-container">
       <div className="projects-grid">
         {projects.map(project => (
-          <div className="project-card" key={project.id}>
+        <Link to={project.url} className="project-card" key={project.id} style={{ textDecoration: 'none' }}>
+          <div>
             <img className="project-image" src={project.image} alt={project.name} />
             <div className="project-details">
               <h3>{project.name}</h3>
@@ -83,6 +84,7 @@ const Projects = () => {
               <Link to={project.url} className="learn-more-button">Learn More</Link>
             </div>
           </div>
+        </Link>
         ))}
       </div>
     </div>

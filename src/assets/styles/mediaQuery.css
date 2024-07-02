@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .menubar{
         height: 10vh;
         font-size: 1.8vw;
@@ -143,7 +143,40 @@
     }
 }
 
+.rotate-message {
+    display: none; 
+}
+
+.rotate-icon {
+    animation: rotate 2s infinite;
+}
   
+@keyframes rotate {
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    transform: rotate(90deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+
+@media only screen and (max-width: 768px) {
+.main-content {
+    display: none;
+}
+.rotate-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+}
 
 
   
