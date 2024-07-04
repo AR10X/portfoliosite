@@ -51,7 +51,7 @@ const projectDetails = {
   'codefolio': {
     name: 'Codefolio',
     version: '1.0.0',
-    url: 'https://example.com/codefolio',
+    url: 'https://abdulrehaman.onrender.com/',
     description: 'A developer portfolio website inspired by the sleek design of the VS Code editor.',
     tags: ['frontend', 'react'],
     image: codefolioImage,
