@@ -19,7 +19,7 @@ const AppleCloneDetail = () => (
     </ul>
     <h3>Technologies Used</h3>
     <ul className="technologies-used">
-      <li><strong>React:</strong> For building the user interface and managing state.</li>
+
       <li><strong>HTML:</strong> For structuring the content on the website.</li>
       <li><strong>CSS:</strong> For styling the website and ensuring responsiveness.</li>
       <li><strong>JavaScript:</strong> For adding interactivity and dynamic content to the website.</li>
