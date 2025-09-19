@@ -44,7 +44,7 @@ const Home = () => {
             </div>
             <h1>Abdul Rehaman</h1>
             <div className='hm-green'>
-              <GreenText>// I am a Backend Engineer.</GreenText>
+              <GreenText>// I am a Frontend Engineer(React/Next.js).</GreenText>
             </div>
           </div>
           <div className='home-txt-4'>

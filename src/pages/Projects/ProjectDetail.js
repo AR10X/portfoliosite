@@ -118,9 +118,6 @@ function ProjectDetail() {
   const { projectName } = useParams();
   const project = projectDetails[projectName];
 
-  if (!project) {
-    return <h2>Project not found</h2>;
-  }
 
   return (
     <div className="detail-container">
