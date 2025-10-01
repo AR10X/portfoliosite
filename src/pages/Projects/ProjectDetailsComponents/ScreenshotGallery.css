@@ -1,0 +1,45 @@
+/* screenshot-gallery.css */
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 12px 0 24px;
+}
+
+.shot {
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Phone screenshots: keep a sane max width so tall mobile UIs don’t look huge */
+.shot--phone {
+  max-width: 360px;   /* tweak 320–400 as you like */
+  margin-inline: auto;
+}
+
+/* Desktop screenshots: let them expand nicely but not edge-to-edge */
+.shot--desktop {
+  max-width: 920px;   /* tweak 800–1100 as you like */
+  margin-inline: auto;
+}
+
+/* Optional chrome-like caption */
+.shot figcaption {
+  font-size: 12px;
+  color: #8ea0a0;
+  margin-top: 8px;
+  text-align: center;
+}

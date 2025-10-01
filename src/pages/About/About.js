@@ -5,10 +5,11 @@ import './About.css';
 import ProfilePic from '../../assets/images/about/dp.jpg';
 import MaheLogo from '../../assets/images/about/mahe-logo.jpg';
 import SkillComp from '../../components/utilities/SkillComp';
-import MongoDBLogo from '../../assets/images/about/mongodb.svg'; 
-import ExpressLogo from '../../assets/images/about/express.svg';
 import ReactLogo from '../../assets/images/about/react.svg'; 
-import NodeLogo from '../../assets/images/about/nodejs.svg'; 
+import NextjsLogo from '../../assets/images/about/next.svg';
+import ExpressLogo from '../../assets/images/about/express.svg';
+import NodeLogo from '../../assets/images/about/nodejs.svg';
+import MongoDBLogo from '../../assets/images/about/mongodb.svg';
 
 
 const About = () => {
@@ -31,7 +32,7 @@ const About = () => {
                 <WhiteText>></WhiteText>
               </div>
               <div className='about-txt-3'>
-              Hey there! I'm Abdul Rehaman, a passionate software engineer who loves solving problems and writing clean code. I'm always eager to learn new things. My goal is to create strong, scalable, and efficient solutions. Whether it's mastering new technologies or collaborating with teams, I'm dedicated to making a positive impact with my work. Let's build something amazing together!
+              Hey there! I’m Abdul Rehaman — a Frontend Engineer (React / Next.js / JavaScript) who builds production-grade web apps focused on performance, polished UX, and measurable outcomes. I’ve delivered realtime collaboration features, scalable UI systems, and product improvements that directly reduce friction for end users.
               </div>
               <div className='about-txt-4'>
                 <WhiteText>{'<'}</WhiteText>
@@ -78,24 +79,30 @@ const About = () => {
             </div>
             <div className='about-txt-9'>
               <SkillComp
-                logo={MongoDBLogo}
-                heading="MongoDB"
-                description="Proficient in MongoDB for database design and querying, with familiarity in Mongoose ORM for schema creation, data validation, and query building."
+                logo={ReactLogo}
+                heading="React.js"
+                description="Proficient in building dynamic, component-driven UIs with React.js. Skilled in hooks, Context API, and state management, with experience in API integration, routing, and performance optimization."
+              />
+              <SkillComp
+                logo={NextjsLogo}
+                heading="Nextjs"
+                description="Experienced in developing production-ready applications with Next.js. Strong in SSR/SSG, API routes, and dynamic routing, with hands-on deployment and integration of authentication and databases."
               />
               <SkillComp
                 logo={ExpressLogo}
                 heading="Express.js"
-                description="Skilled in building robust web applications with Express.js, including creating RESTful APIs with features like routing, middleware, and authentication. Proficient in server-side rendering (SSR) using frameworks like Next.js or Nuxt.js."
+                description="Skilled in building robust web applications with Express.js, including creating RESTful APIs with features like routing, middleware, and authentication."
               />
-              <SkillComp
-                logo={ReactLogo}
-                heading="React.js"
-                description="Proficient in React.js for dynamic UI development, experienced in state management using Redux or context API, and skilled in client-side routing with React Router. Familiarity with server-side rendering using libraries like Next.js."
-              />
+            
               <SkillComp
                 logo={NodeLogo}
                 heading="Node.js"
                 description="Experienced in server-side development with Node.js, skilled in building scalable backend systems with Express.js, and proficient in integrating with MongoDB using Mongoose. Familiarity with asynchronous programming patterns and package management using npm or yarn."
+              />
+              <SkillComp
+                logo={MongoDBLogo}
+                heading="MongoDB"
+                description="Proficient in MongoDB for database design and querying, with familiarity in Mongoose ORM for schema creation, data validation, and query building."
               />
             </div>
             <div className='about-txt-10'>

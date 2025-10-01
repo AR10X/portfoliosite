@@ -8,6 +8,7 @@ import appleImage from '../../assets/images/projects/icons/apple.svg';
 import ambrosiaImage from '../../assets/images/projects/icons/ambrosia.svg';
 import cardchessImage from '../../assets/images/projects/icons/card-chess.svg';
 import textUtilsImage from '../../assets/images/projects/icons/textutils.svg';
+import splitcartImage from '../../assets/images/projects/icons/splitcart.svg';
 
 import MCWDetail from './ProjectDetailsComponents/MCWDetail';
 import DefectDetectionDetail from './ProjectDetailsComponents/DefectDetectionDetail';
@@ -17,10 +18,21 @@ import TextUtilsDetail from './ProjectDetailsComponents/TextUtilsDetail';
 import AppleCloneDetail from './ProjectDetailsComponents/AppleCloneDetail';
 import AmbrosiaDetail from './ProjectDetailsComponents/AmbrosiaDetail';
 import CardChessDetail from './ProjectDetailsComponents/CardChessDetail';
+import SplitcartDetail from './ProjectDetailsComponents/SplitcartDetail';
+
 
 import './ProjectDetail.css';
 
 const projectDetails = {
+  'splitcart': {
+    name: 'Splitcart – Real-time Group Cart',
+    version: '1.0.0',
+    url: 'https://splitcart.vercel.app/',
+    description: 'A collaborative shopping cart enabling multiple users to add/remove items simultaneously with real-time sync (<1s latency) using React, Firebase, and Context API.',
+    tags: ['React', 'Firebase', 'Context API', 'Realtime'],
+    image: splitcartImage,
+    details: <SplitcartDetail />,
+  },
   'manipalcourseware': {
     name: 'ManipalCourseWare (MCW)',
     version: '2.1.0',

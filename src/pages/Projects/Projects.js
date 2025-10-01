@@ -8,6 +8,7 @@ import codefolioImage from '../../assets/images/projects/project-thumbnails/code
 import appleImage from '../../assets/images/projects/project-thumbnails/apple.jpg';
 import ambrosiaImage from '../../assets/images/projects/project-thumbnails/ambrosia.jpg';
 import cardchessImage from '../../assets/images/projects/project-thumbnails/card-chess.jpg';
+import splitcartImage from '../../assets/images/projects/project-thumbnails/splitcart.jpg';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -15,55 +16,62 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      name: 'Splitcart – Real-time Group Cart',
+      description: 'A collaborative shopping cart enabling multiple users to add/remove items simultaneously with real-time sync (<1s latency) using React, Firebase, and Context API.',
+      image: splitcartImage,
+      url: '/projects/splitcart',
+    },
+    {
+      id: 2,
       name: 'ManipalCourseWare (MCW)',
       description: 'A video streaming platform for online classes recorded during the COVID pandemic.',
       image: mcwImage,
       url: '/projects/manipalcourseware', 
     },
     {
-      id: 2,
+      id: 3,
       name: 'Defect Detection with Neural Networks',
       description: 'Defect detection web application utilizing a Convolutional Neural Network (CNN) model to identify defects in PP woven fabric.',
       image: defectDetectionImage,
       url: '/projects/defect-detection', 
     },
     {
-      id: 3,
+      id: 4,
       name: 'WeatherML',
       description: 'Weather Report Forecasting Analysis and Visualization using Python, SQL, and PowerBI, with predictive models for future trends.',
       image: WeatherML,
       url: '/projects/weather-ml', 
     },
     {
-      id: 4,
+      id: 5,
       name: 'Codefolio',
       description: 'A developer portfolio website inspired by the sleek design of the VS Code editor.',
       image: codefolioImage,
       url: '/projects/codefolio',
     },
     {
-      id: 5,
+      id: 6,
       name: 'TextUtils',
       description: 'A React-based static website offering essential text tools such as word counting, text case conversion, and text clearing.',
       image: textUtilsImage,
       url: '/projects/text-utils', 
     },
     {
-      id: 6,
+      id: 7,
       name: 'Apple Clone',
       description: 'A replica of the Apple India website using frontend technologies to mirror its design and functionality.',
       image: appleImage,
       url: '/projects/apple', 
     },
     {
-      id: 7,
+      id: 8,
       name: 'Ambrosia',
       description: 'A visually appealing mockup for Ambrosia, a meal replacement product.',
       image: ambrosiaImage,
       url: '/projects/ambrosia', 
     },
     {
-      id: 8,
+      id: 9,
       name: 'Card Chess',
       description: 'Designed cards for a chess app featuring a medieval theme, enhancing the game aesthetic with historical elements.',
       image: cardchessImage,
